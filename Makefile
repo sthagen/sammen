@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := all
 isort = isort sammen tests
-black = black -S -l 120 --target-version py39 sammen tests
+black = black -S -l 120 --target-version py38 sammen tests
 
 .PHONY: install
 install:
