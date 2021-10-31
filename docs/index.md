@@ -1,3 +1,7 @@
-# TODO
+# Sammen
 
-Use mkdocs as usual ... when there is substance to document.
+Dansk for together - multiple watch to ensure special events come together or go away.
+
+## Status
+
+Experimental.
