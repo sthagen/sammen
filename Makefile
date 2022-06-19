@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := all
 isort = isort sammen tests
-black = black -S -l 120 --target-version py38 sammen tests
+black = black -S -l 120 --target-version py39 sammen tests
 
 .PHONY: install
 install:
@@ -12,7 +12,7 @@ install:
 install-all: install
 	pip install -r tests/requirements-dev.txt
 
-.PHONY: isort
+.PHONY: format
 format:
 	$(isort)
 	$(black)
@@ -30,7 +30,7 @@ mypy:
 
 .PHONY: test
 test:
-	pytest --cov=sammen --log-format="%(levelname)s %(message)s"
+	pytest --asyncio-mode=strict --cov=sammen --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
 
 .PHONY: testcov
 testcov: test
