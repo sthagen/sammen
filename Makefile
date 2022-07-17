@@ -53,3 +53,4 @@ clean:
 	rm -f .coverage.*
 	rm -rf build
 	python setup.py clean
+	@rm -fr site/*
