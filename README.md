@@ -2,7 +2,7 @@
 
 Dansk for together - multiple watch to ensure special events come together or go away. 
 
-[![license](https://img.shields.io/github/license/sthagen/sammen.svg?style=flat)](https://github.com/sthagen/sammen/blob/default/LICENSE)
+[License: MIT](https://git.sr.ht/~sthagen/sammen/tree/default/item/LICENSE)
 
 [![version](https://img.shields.io/pypi/v/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
 [![downloads](https://img.shields.io/pypi/dm/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
@@ -10,22 +10,21 @@ Dansk for together - multiple watch to ensure special events come together or go
 [![supported-versions](https://img.shields.io/pypi/pyversions/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
 
-## Usage
+## Documentation
 
-TODO
+User and developer [documentation of sammen](https://codes.dilettant.life/docs/sammen).
 
-## Install
+## Bug Tracker
 
-Preferred way to install is as usual (for testing or in isolation):
+Feature requests and bug reports are bested entered in the [todos of sammen](https://todo.sr.ht/~sthagen/sammen).
 
-```bash
-$ pipx install sammen
-```
+## Primary Source repository
 
-For production use (well, ahem, ...) or within a virtual python env:
+The primary source repository of [sammen is at sourcehut](https://git.sr.ht/~sthagen/sammen)
+a collection of tools useful for software development.
 
-```bash
-$ pip install sammen
-```
+## Status
+
+Experimental.
 
 **Note**: The default branch is `default`.

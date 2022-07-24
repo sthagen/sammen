@@ -2,12 +2,12 @@
 
 Preferred way to install is as usual (for testing or in isolation):
 
-```bash
-$ pipx install sammen
+```console
+❯ pipx install sammen
 ```
 
 For production use (well, ahem, ...) or within a virtual python env:
 
-```bash
-$ pip install sammen
+```console
+❯ pip install sammen
 ```
