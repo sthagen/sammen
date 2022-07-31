@@ -44,6 +44,7 @@ nav:
   - Introduction: 'index.md'
   - Install: 'install.md'
   - Usage: 'usage.md'
+  - API: 'api.md'
   - Changes: 'changes.md'
   - Test Coverage: https://codes.dilettant.life/coverage/sammen/
 
