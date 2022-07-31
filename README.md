@@ -5,7 +5,7 @@ Dansk for together - multiple watch to ensure special events come together or go
 [License: MIT](https://git.sr.ht/~sthagen/sammen/tree/default/item/LICENSE)
 
 [![version](https://img.shields.io/pypi/v/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
-[![downloads](https://img.shields.io/pypi/dm/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
+[![downloads](https://pepy.tech/badge/sammen/month)](https://pepy.tech/project/sammen)
 [![wheel](https://img.shields.io/pypi/wheel/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
