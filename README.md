@@ -16,7 +16,7 @@ User and developer [documentation of sammen](https://codes.dilettant.life/docs/s
 
 ## Bug Tracker
 
-Feature requests and bug reports are bested entered in the [todos of sammen](https://todo.sr.ht/~sthagen/sammen).
+Feature requests and bug reports are best entered in the [todos of sammen](https://todo.sr.ht/~sthagen/sammen).
 
 ## Primary Source repository
 
