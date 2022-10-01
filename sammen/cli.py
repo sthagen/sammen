@@ -55,6 +55,9 @@ def parse_request(argv: List[str]) -> Union[int, argparse.Namespace]:
     if not options.families:
         parser.error('we need families to watch')
 
+    if not options.dry_run:
+        parser.error('only dry run (no destructive actions taken) implemented in this version')
+
     return options
 
 
