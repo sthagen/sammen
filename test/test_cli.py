@@ -19,7 +19,7 @@ def test_parse_request(capsys):
 
 
 def test_parse_request_doc_root_option(capsys):
-    options = cli.parse_request([f'{DEFAULT_DOCUMENTS_PATH}', '-q'])
+    options = cli.parse_request([f'{DEFAULT_DOCUMENTS_PATH}', '-q', '-d'])
     assert options.families == [str(DEFAULT_DOCUMENTS_PATH)]  # type: ignore
     out, err = capsys.readouterr()
     assert not out
