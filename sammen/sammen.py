@@ -1,9 +1,14 @@
-import asyncio
+"""Dansk for together - multiple watch to ensure special events come together or go away."""
+import argparse
+import datetime as dti
+import logging
 import pathlib
 import sys
-from typing import Union
 
 from watchfiles import Change, awatch
+
+from sammen import log
+
 
 COMMA = ','
 DOT = '.'
@@ -41,41 +46,45 @@ def display_change(file_change: tuple[Change, str]) -> str:
     return f'Entry({entry}): {disp}'
 
 
-async def main(argv: Union[list[str], None] = None) -> int:
-    if argv is None:
-        argv = sys.argv[1:]
-    if not argv:
-        print('usage: trial.py csnames', file=sys.stderr)
-        return 2
-    print(argv)
+async def main(options: argparse.Namespace) -> int:
+    pos_args = options.families
+    if options.quiet:
+        logging.getLogger().setLevel(logging.ERROR)
+    elif options.verbose:
+        logging.getLogger().setLevel(logging.DEBUG)
+
+    start_time = dti.datetime.now(tz=dti.timezone.utc)
     families = {}
-    for csl in argv:
+    for csl in pos_args:
         if COMMA not in csl:
             continue
         p, s = csl.split(COMMA, 1)
         xs = set(x.strip() for x in s.strip().split(COMMA))
         families[p] = tuple(sorted(f'{p}{x}' if x.startswith(DOT) else x for x in xs))
     if not families:
-        print('usage: trial.py groups-of-comma-separated-names', file=sys.stderr)
+        log.error('families should be given as comma separated paths')
         return 2
 
-    print(f'Watching for orphaned secondaries in {families}')
+    log.info(f'Watching for orphaned secondaries of {families}')
     paths = paths_to_watch(families)
-    print(f'Along the paths {paths}')
+    log.debug(f'- set up watchers along the paths {paths}')
     ok, diagnostic = paths_exist(paths)
     if not ok:
-        print(diagnostic, file=sys.stderr)
+        log.error(diagnostic)
         return 1
 
-    async for changes in awatch(*paths):
-        print('# --- triggered ---')
-        for file_change in changes:
-            change, entry = file_change
-            if any(entry.endswith(f) for fs in families.values() for f in fs):
-                print(f'Affected secondary in {entry}')
-            print(display_change(file_change))
+    try:
+        async for changes in awatch(*paths):
+            for file_change in changes:
+                change, entry = file_change
+                if any(entry.endswith(f) for fs in families.values() for f in fs):
+                    log.info(f'Affected secondary in {entry}')
+                    log.info(display_change(file_change))
+    except RuntimeError:
+        log.debug('Noisy request handling - preparing termination')
+    except KeyboardInterrupt:
+        log.debug('Received keyboard interrupt - preparing termination')
 
+    end_time = dti.datetime.now(tz=dti.timezone.utc)
+    log.info(f'Orphanage watch complete after {(end_time - start_time).total_seconds()} seconds')
     return 0
-
-
-asyncio.run(main(argv=sys.argv[1:]))
