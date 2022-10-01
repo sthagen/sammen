@@ -1,0 +1,14 @@
+[
+  {
+    "Author": "UNKNOWN",
+    "Description": "Simple, modern and high performance file watching and code reload in python.",
+    "License": "MIT License",
+    "LicenseFile": "UNKNOWN",
+    "LicenseText": "UNKNOWN",
+    "Name": "watchfiles",
+    "NoticeFile": "UNKNOWN",
+    "NoticeText": "UNKNOWN",
+    "URL": "UNKNOWN",
+    "Version": "0.17.0"
+  }
+]

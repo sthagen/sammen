@@ -1,0 +1,9 @@
+digraph {
+	watchfiles [label="watchfiles\n0.17.0"]
+	watchfiles -> anyio [label=">=3.0.0,<4"]
+	anyio [label="anyio\n3.6.1"]
+	anyio -> idna [label=">=2.8"]
+	anyio -> sniffio [label=">=1.1"]
+	sniffio [label="sniffio\n1.3.0"]
+	idna [label="idna\n3.4"]
+}
