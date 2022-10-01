@@ -3,7 +3,6 @@ import pathlib
 import pytest
 
 import sammen.cli as cli
-import sammen.sammen as api
 
 TEST_PREFIX = pathlib.Path('test', 'fixtures')
 DEFAULT_DOCUMENTS_PATH = TEST_PREFIX
@@ -40,7 +39,5 @@ def test_parse_request_pos_doc_root_not_present(capsys):
     assert err.value.code == 2
     out, err = capsys.readouterr()
     assert not out
-    message_part = (
-        f'sammen: error: you cannot be quiet and verbose at the same time'
-    )
+    message_part = 'sammen: error: you cannot be quiet and verbose at the same time'
     assert message_part in err
