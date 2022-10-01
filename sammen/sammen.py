@@ -44,6 +44,32 @@ def display_change(file_change: tuple[Change, str]) -> str:
     return f'Entry({entry}): {disp}'
 
 
+async def process(options, families, changes) -> None:
+    """Correlate and eventually act."""
+    primary_present = {primary: pathlib.Path(primary).is_file() for primary in families}
+    log.debug(primary_present)
+    primary_abs_paths = {str(pathlib.Path(p).resolve()): p for p in primary_present}
+    log.debug(primary_abs_paths)
+    secondaries = set(secondary for secondaries in families.values() for secondary in secondaries)
+    log.debug(secondaries)
+    secondaries_abs_paths = {str(pathlib.Path(s).resolve()): s for s in secondaries}
+    log.debug(secondaries_abs_paths)
+    for file_change in changes:
+        log.info(display_change(file_change))
+        change, entry = file_change
+        if entry in primary_abs_paths:
+            if change == Change.deleted:
+                for secondary in families[primary_abs_paths[entry]]:
+                    if pathlib.Path(secondary).is_file():
+                        if options.dry_run:
+                            log.info(f'Would remove secondary {secondary} of gone primary {primary_abs_paths[entry]}')
+            continue
+        if entry in secondaries_abs_paths:
+            for primary, secondaries in families.items():
+                if any(entry.endswith(secondary) for secondary in secondaries):
+                    log.info(f'Affected secondary of primary {primary} in {secondaries_abs_paths[entry]}')
+
+
 async def main(options: argparse.Namespace) -> int:
     pos_args = options.families
     if options.quiet:
@@ -73,11 +99,7 @@ async def main(options: argparse.Namespace) -> int:
 
     try:
         async for changes in awatch(*paths):
-            for file_change in changes:
-                change, entry = file_change
-                if any(entry.endswith(f) for fs in families.values() for f in fs):
-                    log.info(f'Affected secondary in {entry}')
-                    log.info(display_change(file_change))
+            await process(options, families, changes)
     except RuntimeError:
         log.debug('Noisy request handling - preparing termination')
     except KeyboardInterrupt:
