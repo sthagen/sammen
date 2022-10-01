@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022.10.1
+
+* Initial implementation of dry run mode
+
 ## 2022.7.24
 
 * Bumped dependencies for development and test
