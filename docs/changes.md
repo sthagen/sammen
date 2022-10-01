@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022.10.2
+
+* Fixed incomplete dry-run implementation
+
 ## 2022.10.1
 
 * Initial implementation of dry run mode
