@@ -3,12 +3,10 @@ import argparse
 import datetime as dti
 import logging
 import pathlib
-import sys
 
 from watchfiles import Change, awatch
 
 from sammen import log
-
 
 COMMA = ','
 DOT = '.'
