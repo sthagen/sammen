@@ -128,10 +128,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Local dev stuff
+# Local development artifacts
 *~
 .idea
+*.log
 local_publi.sh
-
-.vscode/
 local_*
+.vscode/
+current-bandit.json
