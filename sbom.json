@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:9aa05749-ba24-4ee8-b508-be2fbf17c26d",
+  "serialNumber": "urn:uuid:03393a40-59b5-423e-80d3-dce87010c63a",
   "version": 1,
   "metadata": {
-    "timestamp": "2022-10-01T19:40:27.050403+00:00",
+    "timestamp": "2022-10-02T04:56:49.087357+00:00",
     "tools": [
       {
         "vendor": "CycloneDX",
@@ -56,7 +56,7 @@
   "components": [
     {
       "type": "library",
-      "bom-ref": "8fe221e9-28ca-4366-a634-d896ba351484",
+      "bom-ref": "0b5011b6-223e-4a10-a18c-e72ca16fcc3a",
       "name": "watchfiles",
       "version": "0.17.0",
       "purl": "pkg:pypi/watchfiles@0.17.0"
@@ -64,7 +64,7 @@
   ],
   "dependencies": [
     {
-      "ref": "8fe221e9-28ca-4366-a634-d896ba351484",
+      "ref": "0b5011b6-223e-4a10-a18c-e72ca16fcc3a",
       "dependsOn": []
     }
   ]
