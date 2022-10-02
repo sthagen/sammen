@@ -2,6 +2,8 @@
 
 ## 2022.10.2
 
+* Added dry-run log indicator
+* Added real mode (default) implementation
 * Fixed incomplete dry-run implementation
 
 ## 2022.10.1
