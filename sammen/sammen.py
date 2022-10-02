@@ -2,6 +2,7 @@
 import argparse
 import datetime as dti
 import logging
+import os
 import pathlib
 
 from watchfiles import Change, awatch
@@ -50,24 +51,21 @@ async def process(options, families, changes) -> None:
     log.debug(primary_present)
     primary_abs_paths = {str(pathlib.Path(p).resolve()): p for p in primary_present}
     log.debug(primary_abs_paths)
-    secondaries = set(secondary for secondaries in families.values() for secondary in secondaries)
-    log.debug(secondaries)
-    secondaries_abs_paths = {str(pathlib.Path(s).resolve()): s for s in secondaries}
-    log.debug(secondaries_abs_paths)
     for file_change in changes:
         log.info(display_change(file_change))
         change, entry = file_change
-        if entry in primary_abs_paths:
-            if change == Change.deleted:
-                for secondary in families[primary_abs_paths[entry]]:
-                    if pathlib.Path(secondary).is_file():
-                        if options.dry_run:
-                            log.info(f'Would remove secondary {secondary} of gone primary {primary_abs_paths[entry]}')
-            continue
-        if entry in secondaries_abs_paths:
-            for primary, secondaries in families.items():
-                if any(entry.endswith(secondary) for secondary in secondaries):
-                    log.info(f'Affected secondary of primary {primary} in {secondaries_abs_paths[entry]}')
+        if change == Change.deleted and entry in primary_abs_paths:
+            for secondary in families[primary_abs_paths[entry]]:
+                if pathlib.Path(secondary).is_file():
+                    context = f'secondary {secondary} of gone primary {primary_abs_paths[entry]}'
+                    if options.dry_run:
+                        log.info(f'Would remove {context}')
+                    else:
+                        try:
+                            os.remove(secondary)
+                            log.info(f'Removed {context}')
+                        except Exception as err:
+                            log.info(f'Failed to remove {context} with error {err}')
 
 
 async def main(options: argparse.Namespace) -> int:
@@ -89,7 +87,8 @@ async def main(options: argparse.Namespace) -> int:
         log.error('families should be given as comma separated paths')
         return 2
 
-    log.info(f'Watching for orphaned secondaries of {families}')
+    mode = ' dry-run (no changes)' if options.dry_run else ''
+    log.info(f'Watching for orphaned secondaries of {families}{mode}')
     paths = paths_to_watch(families)
     log.debug(f'- set up watchers along the paths {paths}')
     ok, diagnostic = paths_exist(paths)
