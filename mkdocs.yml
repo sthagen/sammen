@@ -3,6 +3,9 @@ site_description: Dansk for together - multiple watch to ensure special events c
 
 theme:
   name: 'material'
+  features:
+    - navigation.expand
+    - toc.integrate
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
