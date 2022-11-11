@@ -2,14 +2,14 @@
     {
         "key": "watchfiles",
         "package_name": "watchfiles",
-        "installed_version": "0.17.0",
-        "required_version": "0.17.0",
+        "installed_version": "0.18.1",
+        "required_version": "0.18.1",
         "dependencies": [
             {
                 "key": "anyio",
                 "package_name": "anyio",
                 "installed_version": "3.6.1",
-                "required_version": ">=3.0.0,<4",
+                "required_version": ">=3.0.0",
                 "dependencies": [
                     {
                         "key": "idna",

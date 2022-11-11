@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://github.com/sthagen/pilli/blob/default/sbom.json) with SHA256 checksum ([3d1accc9 ...](https://raw.githubusercontent.com/sthagen/pilli/default/sbom.json.sha256 "sha256:3d1accc9ffd42882de3f2bf62b78d90296e2e1aba799d12bddc537c3032aedef")).
-<!--[[[end]]] (checksum: f5daec60624bd0185ad5ccdf25ea0df6)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://github.com/sthagen/pilli/blob/default/sbom.json) with SHA256 checksum ([1286a551 ...](https://raw.githubusercontent.com/sthagen/pilli/default/sbom.json.sha256 "sha256:1286a5518a1c98b530822cda88e36d5b721c8ae4cfddd322e85ecf4f0a3ee71d")).
+<!--[[[end]]] (checksum: 2c3da32b7a5750abd688cd240aa6760b)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -10,10 +10,10 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 ### Direct Dependencies
 
 <!--[[[fill direct_dependencies_table()]]]-->
-| Name       | Version                                               | License     | Author  | Description (from packaging data)                                            |
-|:-----------|:------------------------------------------------------|:------------|:--------|:-----------------------------------------------------------------------------|
-| watchfiles | [0.17.0](https://pypi.org/project/watchfiles/0.17.0/) | MIT License | UNKNOWN | Simple, modern and high performance file watching and code reload in python. |
-<!--[[[end]]] (checksum: f995c59636a3df23e6c008c3bff857f7)-->
+| Name                                                                | Version                                               | License     | Author  | Description (from packaging data)                                            |
+|:--------------------------------------------------------------------|:------------------------------------------------------|:------------|:--------|:-----------------------------------------------------------------------------|
+| [watchfiles](https://github.com/samuelcolvin/watchfiles/watchfiles) | [0.18.1](https://pypi.org/project/watchfiles/0.18.1/) | MIT License | UNKNOWN | Simple, modern and high performance file watching and code reload in python. |
+<!--[[[end]]] (checksum: 2970dbc7c43b89a7b0109c7f795e2758)-->
 
 ### Indirect Dependencies
 
@@ -39,9 +39,9 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 
 <!--[[[fill dependency_tree_console_text()]]]-->
 ````console
-watchfiles==0.17.0
-  - anyio [required: >=3.0.0,<4, installed: 3.6.1]
+watchfiles==0.18.1
+  - anyio [required: >=3.0.0, installed: 3.6.1]
     - idna [required: >=2.8, installed: 3.4]
     - sniffio [required: >=1.1, installed: 1.3.0]
 ````
-<!--[[[end]]] (checksum: daff0e1bba9cd14cdaf0a8cc9330e57d)-->
+<!--[[[end]]] (checksum: 79c68fd67d97057dbecc758ebe7e72a4)-->
