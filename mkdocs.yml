@@ -3,6 +3,8 @@ site_description: Dansk for together - multiple watch to ensure special events c
 
 theme:
   name: 'material'
+  logo: assets/logo.png
+  favicon: images/favicon.ico
   features:
     - navigation.expand
     - toc.integrate
