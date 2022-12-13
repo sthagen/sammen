@@ -1,8 +1,10 @@
-# sammen
+# Sammen
 
 Dansk for together - multiple watch to ensure special events come together or go away. 
 
 [License: MIT](https://git.sr.ht/~sthagen/sammen/tree/default/item/LICENSE)
+
+Third party dependencies are documented in the folder [third-party](third-party/README.md).
 
 [![version](https://img.shields.io/pypi/v/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
 [![downloads](https://pepy.tech/badge/sammen/month)](https://pepy.tech/project/sammen)
