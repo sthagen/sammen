@@ -1,0 +1,5 @@
+---
+packages:
+- anyio
+- idna
+- sniffio
