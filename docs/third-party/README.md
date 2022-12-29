@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sammen/blob/default/sbom.json) with SHA256 checksum ([d472012a ...](https://git.sr.ht/~sthagen/sammen/blob/default/sbom.json.sha256 "sha256:d472012add751684eb361237343b8c802f2f4c03ee209e60a20b1cebd4030bb7")).
-<!--[[[end]]] (checksum: 17cea444bfdf3157897c42a8b8ca5269)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sammen/blob/default/sbom.json) with SHA256 checksum ([5d7abaa4 ...](https://git.sr.ht/~sthagen/sammen/blob/default/sbom.json.sha256 "sha256:5d7abaa44d686adc468d1ace356833822fffcb56840e212d9b287315c550a4b7")).
+<!--[[[end]]] (checksum: 5f528f9fbf66e8d94484c26bc7c9b1b4)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -18,12 +18,12 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 ### Indirect Dependencies
 
 <!--[[[fill indirect_dependencies_table()]]]-->
-| Name                                              | Version                                          | License                              | Author             | Description (from packaging data)                                                   |
-|:--------------------------------------------------|:-------------------------------------------------|:-------------------------------------|:-------------------|:------------------------------------------------------------------------------------|
-| [sniffio](https://github.com/python-trio/sniffio) | [1.3.0](https://pypi.org/project/sniffio/1.3.0/) | Apache Software License; MIT License | Nathaniel J. Smith | Sniff out which async library your code is running under                            |
-| anyio                                             | [3.6.2](https://pypi.org/project/anyio/3.6.2/)   | MIT License                          | Alex Grönholm      | High level compatibility layer for multiple asynchronous event loop implementations |
-| idna                                              | [3.4](https://pypi.org/project/idna/3.4/)        | BSD License                          | UNKNOWN            | Internationalized Domain Names in Applications (IDNA)                               |
-<!--[[[end]]] (checksum: 24c4d215b5dd3ae93918621a5909840e)-->
+| Name                                                               | Version                                          | License                              | Author             | Description (from packaging data)                                                   |
+|:-------------------------------------------------------------------|:-------------------------------------------------|:-------------------------------------|:-------------------|:------------------------------------------------------------------------------------|
+| [anyio](https://github.com/agronholm/anyio/blob/master/README.rst) | [3.6.2](https://pypi.org/project/anyio/3.6.2/)   | MIT License                          | Alex Grönholm      | High level compatibility layer for multiple asynchronous event loop implementations |
+| [idna](https://github.com/kjd/idna/blob/master/README.rst)         | [3.4](https://pypi.org/project/idna/3.4/)        | BSD License                          | Kim Davies         | Internationalized Domain Names in Applications (IDNA)                               |
+| [sniffio](https://github.com/python-trio/sniffio)                  | [1.3.0](https://pypi.org/project/sniffio/1.3.0/) | Apache Software License; MIT License | Nathaniel J. Smith | Sniff out which async library your code is running under                            |
+<!--[[[end]]] (checksum: 2cce5985e6538f3e9bf7161bc99263d2)-->
 
 ## Dependency Tree(s)
 
