@@ -1,6 +1,6 @@
 {
   "errors": [],
-  "generated_at": "2022-11-11T20:55:42Z",
+  "generated_at": "2023-01-02T12:36:20Z",
   "metrics": {
     "_totals": {
       "CONFIDENCE.HIGH": 0,
@@ -11,7 +11,7 @@
       "SEVERITY.LOW": 0,
       "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 206,
+      "loc": 208,
       "nosec": 0,
       "skipped_tests": 0
     },
@@ -63,7 +63,7 @@
       "SEVERITY.LOW": 0,
       "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 90,
+      "loc": 92,
       "nosec": 0,
       "skipped_tests": 0
     }
