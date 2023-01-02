@@ -4,6 +4,7 @@ import datetime as dti
 import logging
 import os
 import pathlib
+from typing import no_type_check
 
 from watchfiles import Change, awatch
 
@@ -45,6 +46,7 @@ def display_change(file_change: tuple[Change, str]) -> str:
     return f'Entry({entry}): {disp}'
 
 
+@no_type_check
 async def process(options, families, changes) -> None:
     """Correlate and eventually act."""
     primary_present = {primary: pathlib.Path(primary).is_file() for primary in families}
