@@ -1,0 +1,42 @@
+---
+SPDXID: "SPDXRef-DOCUMENT"
+spdxVersion: "SPDX-2.3"
+creationInfo:
+  comment: "Converted from CycloneDX spec version 1.4"
+  created: "2023-06-24T20:41:36Z"
+  creators:
+  - "Tool: CycloneDX:cyclonedx-bom-3.11.0"
+  - "Tool: CycloneDX:cyclonedx-python-lib-3.1.1"
+  - "Tool: CycloneToSpdx-0.1.4"
+  licenseListVersion: "3.21"
+name: "SBOM-for-watchfiles"
+dataLicense: "CC0-1.0"
+annotations:
+- annotationDate: "2023-06-24T20:41:38Z"
+  annotationType: "OTHER"
+  annotator: "Tool: CycloneToSpdx"
+  comment: "MISSING_CDX_PROPERTY:extensions={}"
+documentNamespace: "https://cyclonedx/32fc1881-126e-496d-bba1-fe8e95aa8484_1"
+packages:
+- SPDXID: "SPDXRef-5c0b09ee-0716-4e4d-ae66-9bb3857a2b20"
+  annotations:
+  - annotationDate: "2023-06-24T20:41:38Z"
+    annotationType: "OTHER"
+    annotator: "Tool: CycloneToSpdx"
+    comment: "MISSING_CDX_PROPERTY:componentType=\"LIBRARY\""
+  copyrightText: "NOASSERTION"
+  downloadLocation: "NOASSERTION"
+  externalRefs:
+  - referenceCategory: "PACKAGE-MANAGER"
+    referenceLocator: "pkg:pypi/watchfiles@0.19.0"
+    referenceType: "purl"
+  filesAnalyzed: false
+  licenseConcluded: "NOASSERTION"
+  licenseDeclared: "NOASSERTION"
+  name: "watchfiles"
+  primaryPackagePurpose: "LIBRARY"
+  versionInfo: "0.19.0"
+relationships:
+- spdxElementId: "SPDXRef-DOCUMENT"
+  relationshipType: "DESCRIBES"
+  relatedSpdxElement: "SPDXRef-5c0b09ee-0716-4e4d-ae66-9bb3857a2b20"
