@@ -1,6 +1,6 @@
 # Sammen
 
-Dansk for together - multiple watch to ensure special events come together or go away. 
+Together (Dansk: sammen) - watch multiple artifacts to ensure special events come together or go away.
 
 [License: MIT](https://git.sr.ht/~sthagen/sammen/tree/default/item/LICENSE)
 

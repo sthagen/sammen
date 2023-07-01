@@ -1,5 +1,5 @@
 site_name: Sammen
-site_description: Dansk for together - multiple watch to ensure special events come together or go away.
+site_description: "Together (Dansk: sammen) - watch multiple artifacts to ensure special events come together or go away."
 
 theme:
   name: 'material'
