@@ -11,6 +11,7 @@ Third party dependencies are documented in the folder [third-party](third-party/
 [![wheel](https://img.shields.io/pypi/wheel/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
+[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/sammen.svg?style=flat)](https://git.sr.ht/~sthagen/sammen/log)
 
 ## Bug Tracker
 
