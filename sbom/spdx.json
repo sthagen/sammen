@@ -3,23 +3,23 @@
   "spdxVersion" : "SPDX-2.3",
   "creationInfo" : {
     "comment" : "Converted from CycloneDX spec version 1.4",
-    "created" : "2023-08-16T06:42:28Z",
+    "created" : "2023-08-25T18:20:20Z",
     "creators" : [ "Tool: CycloneDX:cyclonedx-bom-3.11.2", "Tool: CycloneDX:cyclonedx-python-lib-3.1.5", "Tool: CycloneToSpdx-0.1.4" ],
     "licenseListVersion" : "3.21"
   },
   "name" : "SBOM-for-watchfiles",
   "dataLicense" : "CC0-1.0",
   "annotations" : [ {
-    "annotationDate" : "2023-08-16T06:42:29Z",
+    "annotationDate" : "2023-08-25T18:20:21Z",
     "annotationType" : "OTHER",
     "annotator" : "Tool: CycloneToSpdx",
     "comment" : "MISSING_CDX_PROPERTY:extensions={}"
   } ],
-  "documentNamespace" : "https://cyclonedx/39bf2a32-adf9-43ed-8879-89010370522f_1",
+  "documentNamespace" : "https://cyclonedx/886e27f5-9d33-49ca-9a09-8e3ed31e9989_1",
   "packages" : [ {
-    "SPDXID" : "SPDXRef-35f2b1c7-5096-48e3-9c4c-dbe5fdf160dd",
+    "SPDXID" : "SPDXRef-0777cf3f-1a70-49d1-9b7c-74840a994043",
     "annotations" : [ {
-      "annotationDate" : "2023-08-16T06:42:29Z",
+      "annotationDate" : "2023-08-25T18:20:21Z",
       "annotationType" : "OTHER",
       "annotator" : "Tool: CycloneToSpdx",
       "comment" : "MISSING_CDX_PROPERTY:componentType=\"LIBRARY\""
@@ -28,7 +28,7 @@
     "downloadLocation" : "NOASSERTION",
     "externalRefs" : [ {
       "referenceCategory" : "PACKAGE-MANAGER",
-      "referenceLocator" : "pkg:pypi/watchfiles@0.19.0",
+      "referenceLocator" : "pkg:pypi/watchfiles@0.20.0",
       "referenceType" : "purl"
     } ],
     "filesAnalyzed" : false,
@@ -36,11 +36,11 @@
     "licenseDeclared" : "NOASSERTION",
     "name" : "watchfiles",
     "primaryPackagePurpose" : "LIBRARY",
-    "versionInfo" : "0.19.0"
+    "versionInfo" : "0.20.0"
   } ],
   "relationships" : [ {
     "spdxElementId" : "SPDXRef-DOCUMENT",
     "relationshipType" : "DESCRIBES",
-    "relatedSpdxElement" : "SPDXRef-35f2b1c7-5096-48e3-9c4c-dbe5fdf160dd"
+    "relatedSpdxElement" : "SPDXRef-0777cf3f-1a70-49d1-9b7c-74840a994043"
   } ]
 }

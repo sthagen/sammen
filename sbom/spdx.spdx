@@ -1,6 +1,6 @@
 SPDXVersion: SPDX-2.3
 DataLicense: CC0-1.0
-DocumentNamespace: https://cyclonedx/39bf2a32-adf9-43ed-8879-89010370522f_1
+DocumentNamespace: https://cyclonedx/886e27f5-9d33-49ca-9a09-8e3ed31e9989_1
 DocumentName: SBOM-for-watchfiles
 SPDXID: SPDXRef-DOCUMENT
 
@@ -8,34 +8,34 @@ SPDXID: SPDXRef-DOCUMENT
 Creator: Tool: CycloneDX:cyclonedx-bom-3.11.2
 Creator: Tool: CycloneDX:cyclonedx-python-lib-3.1.5
 Creator: Tool: CycloneToSpdx-0.1.4
-Created: 2023-08-16T06:42:28Z
+Created: 2023-08-25T18:20:20Z
 CreatorComment: <text>Converted from CycloneDX spec version 1.4</text>
 LicenseListVersion: 3.21
 ## Annotations
 Annotator: Tool: CycloneToSpdx
-AnnotationDate: 2023-08-16T06:42:30Z
+AnnotationDate: 2023-08-25T18:20:22Z
 AnnotationComment: <text>MISSING_CDX_PROPERTY:extensions={}</text>
 AnnotationType: OTHER
 SPDXREF: SPDXRef-DOCUMENT
 ## Relationships
-Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-35f2b1c7-5096-48e3-9c4c-dbe5fdf160dd
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-0777cf3f-1a70-49d1-9b7c-74840a994043
 
 ## Package Information
 PackageName: watchfiles
-SPDXID: SPDXRef-35f2b1c7-5096-48e3-9c4c-dbe5fdf160dd
-PackageVersion: 0.19.0
+SPDXID: SPDXRef-0777cf3f-1a70-49d1-9b7c-74840a994043
+PackageVersion: 0.20.0
 PackageDownloadLocation: NOASSERTION
 PrimaryPackagePurpose: LIBRARY
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
-ExternalRef: PACKAGE-MANAGER purl pkg:pypi/watchfiles@0.19.0
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/watchfiles@0.20.0
 ## Annotations
 Annotator: Tool: CycloneToSpdx
-AnnotationDate: 2023-08-16T06:42:30Z
+AnnotationDate: 2023-08-25T18:20:22Z
 AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
 AnnotationType: OTHER
-SPDXREF: SPDXRef-35f2b1c7-5096-48e3-9c4c-dbe5fdf160dd
+SPDXREF: SPDXRef-0777cf3f-1a70-49d1-9b7c-74840a994043
 FilesAnalyzed: false
 
 
