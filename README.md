@@ -7,7 +7,7 @@ Together (Dansk: sammen) - watch multiple artifacts to ensure special events com
 Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
 
 [![version](https://img.shields.io/pypi/v/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
-[![downloads](https://pepy.tech/badge/sammen/month)](https://pepy.tech/project/sammen)
+[![downloads](https://static.pepy.tech/badge/sammen/month)](https://pepy.tech/project/sammen)
 [![wheel](https://img.shields.io/pypi/wheel/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
