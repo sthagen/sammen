@@ -3,23 +3,23 @@
   "spdxVersion" : "SPDX-2.3",
   "creationInfo" : {
     "comment" : "Converted from CycloneDX spec version 1.4",
-    "created" : "2023-08-25T18:20:20Z",
+    "created" : "2023-10-13T15:13:54Z",
     "creators" : [ "Tool: CycloneDX:cyclonedx-bom-3.11.2", "Tool: CycloneDX:cyclonedx-python-lib-3.1.5", "Tool: CycloneToSpdx-0.1.4" ],
-    "licenseListVersion" : "3.21"
+    "licenseListVersion" : "3.22"
   },
   "name" : "SBOM-for-watchfiles",
   "dataLicense" : "CC0-1.0",
   "annotations" : [ {
-    "annotationDate" : "2023-08-25T18:20:21Z",
+    "annotationDate" : "2023-10-13T15:13:55Z",
     "annotationType" : "OTHER",
     "annotator" : "Tool: CycloneToSpdx",
     "comment" : "MISSING_CDX_PROPERTY:extensions={}"
   } ],
-  "documentNamespace" : "https://cyclonedx/886e27f5-9d33-49ca-9a09-8e3ed31e9989_1",
+  "documentNamespace" : "https://cyclonedx/3a0ff94f-9d97-4e7b-876a-87d11196e958_1",
   "packages" : [ {
-    "SPDXID" : "SPDXRef-0777cf3f-1a70-49d1-9b7c-74840a994043",
+    "SPDXID" : "SPDXRef-e92e2694-59dc-4ac8-bb3a-783da83fd68a",
     "annotations" : [ {
-      "annotationDate" : "2023-08-25T18:20:21Z",
+      "annotationDate" : "2023-10-13T15:13:55Z",
       "annotationType" : "OTHER",
       "annotator" : "Tool: CycloneToSpdx",
       "comment" : "MISSING_CDX_PROPERTY:componentType=\"LIBRARY\""
@@ -28,7 +28,7 @@
     "downloadLocation" : "NOASSERTION",
     "externalRefs" : [ {
       "referenceCategory" : "PACKAGE-MANAGER",
-      "referenceLocator" : "pkg:pypi/watchfiles@0.20.0",
+      "referenceLocator" : "pkg:pypi/watchfiles@0.21.0",
       "referenceType" : "purl"
     } ],
     "filesAnalyzed" : false,
@@ -36,11 +36,11 @@
     "licenseDeclared" : "NOASSERTION",
     "name" : "watchfiles",
     "primaryPackagePurpose" : "LIBRARY",
-    "versionInfo" : "0.20.0"
+    "versionInfo" : "0.21.0"
   } ],
   "relationships" : [ {
     "spdxElementId" : "SPDXRef-DOCUMENT",
     "relationshipType" : "DESCRIBES",
-    "relatedSpdxElement" : "SPDXRef-0777cf3f-1a70-49d1-9b7c-74840a994043"
+    "relatedSpdxElement" : "SPDXRef-e92e2694-59dc-4ac8-bb3a-783da83fd68a"
   } ]
 }
