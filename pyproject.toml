@@ -19,7 +19,7 @@ classifiers = [
 ]
 keywords = ["developer-tools", "devops"]
 dependencies = [
-    "watchfiles >= 0.20.0",
+    "watchfiles >= 0.21.0",
 ]
 requires-python = ">=3.9"
 
