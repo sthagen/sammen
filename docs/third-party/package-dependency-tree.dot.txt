@@ -7,5 +7,5 @@ digraph {
 	idna [label="idna\n3.4"]
 	sniffio [label="sniffio\n1.3.0"]
 	watchfiles -> anyio [label=">=3.0.0"]
-	watchfiles [label="watchfiles\n0.20.0"]
+	watchfiles [label="watchfiles\n0.21.0"]
 }

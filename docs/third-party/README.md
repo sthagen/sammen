@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sammen/blob/default/sbom/cdx.json) with SHA256 checksum ([0ffb8da1 ...](https://git.sr.ht/~sthagen/sammen/blob/default/sbom/cdx.json.sha256 "sha256:0ffb8da1074179cbcd64b69e58b53ac8dd6938c060e585eabf3a6d2ddbfbb68e")).
-<!--[[[end]]] (checksum: fde4ed748a3f824eb23b39f3723d1fc2)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sammen/blob/default/sbom/cdx.json) with SHA256 checksum ([768b25a9 ...](https://git.sr.ht/~sthagen/sammen/blob/default/sbom/cdx.json.sha256 "sha256:768b25a97929155c321e949db48494e6465d975172b50665e9df697312c7bac1")).
+<!--[[[end]]] (checksum: c1fd9f0111e53cc04b137a80136db6c9)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -12,8 +12,8 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 <!--[[[fill direct_dependencies_table()]]]-->
 | Name                                                                | Version                                               | License     | Author                           | Description (from packaging data)                                            |
 |:--------------------------------------------------------------------|:------------------------------------------------------|:------------|:---------------------------------|:-----------------------------------------------------------------------------|
-| [watchfiles](https://github.com/samuelcolvin/watchfiles/watchfiles) | [0.20.0](https://pypi.org/project/watchfiles/0.20.0/) | MIT License | Samuel Colvin <s@muelcolvin.com> | Simple, modern and high performance file watching and code reload in python. |
-<!--[[[end]]] (checksum: 620f5028a7eb3d3a31f3dc4ed191d1b2)-->
+| [watchfiles](https://github.com/samuelcolvin/watchfiles/watchfiles) | [0.21.0](https://pypi.org/project/watchfiles/0.21.0/) | MIT License | Samuel Colvin <s@muelcolvin.com> | Simple, modern and high performance file watching and code reload in python. |
+<!--[[[end]]] (checksum: 166335c3803761d831aeb100a53ddf30)-->
 
 ### Indirect Dependencies
 
@@ -39,10 +39,10 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 
 <!--[[[fill dependency_tree_console_text()]]]-->
 ````console
-watchfiles==0.20.0
+watchfiles==0.21.0
 └── anyio [required: >=3.0.0, installed: 3.7.1]
     ├── exceptiongroup [required: Any, installed: 1.1.2]
     ├── idna [required: >=2.8, installed: 3.4]
     └── sniffio [required: >=1.1, installed: 1.3.0]
 ````
-<!--[[[end]]] (checksum: 0c033e74befcb35ca9c11291a7c0d307)-->
+<!--[[[end]]] (checksum: 0be38c728bfdfafc40c865b676674fb8)-->

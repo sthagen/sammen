@@ -2,8 +2,8 @@
     {
         "key": "watchfiles",
         "package_name": "watchfiles",
-        "installed_version": "0.20.0",
-        "required_version": "0.20.0",
+        "installed_version": "0.21.0",
+        "required_version": "0.21.0",
         "dependencies": [
             {
                 "key": "anyio",
