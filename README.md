@@ -3,6 +3,7 @@ y# Sammen
 Together (Dansk: sammen) - watch multiple artifacts to ensure special events come together or go away.
 
 [License: MIT](https://git.sr.ht/~sthagen/sammen/tree/default/item/LICENSE)
+[Country of origin: Switzerland](https://git.sr.ht/~sthagen/sammen/tree/default/item/COUNTRY-OF-ORIGIN)
 
 Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
 
