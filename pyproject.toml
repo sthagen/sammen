@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sammen"
-version = "2022.10.2"
+version = "2023.10.21"
 description = "Dansk for together - multiple watch to ensure special events come together or go away."
 readme = "README.md"
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
