@@ -2,18 +2,15 @@
 
 Together (Dansk: sammen) - watch multiple artifacts to ensure special events come together or go away.
 
-[License: MIT](https://git.sr.ht/~sthagen/sammen/tree/default/item/LICENSE) |
-[Country of origin: Switzerland](https://git.sr.ht/~sthagen/sammen/tree/default/item/COUNTRY-OF-ORIGIN) |
-[Export control classification number(ECCN): EAR99](https://git.sr.ht/~sthagen/sammen/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![license](badges/license-spdx-mit.svg)](https://git.sr.ht/~sthagen/sammen/tree/default/item/LICENSE)
+[![Country of Origin](badges/country-of-origin-name-switzerland-neutral.svg)](https://git.sr.ht/~sthagen/sammen/tree/default/item/COUNTRY-OF-ORIGIN)
+[![Export Classification Control Number (ECCN)](badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/sammen/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
-Third party dependencies are documented in the folder [third-party](third-party/README.md).
-
-[![version](https://img.shields.io/pypi/v/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
-[![downloads](https://static.pepy.tech/badge/sammen/month)](https://pepy.tech/project/sammen)
-[![wheel](https://img.shields.io/pypi/wheel/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
-[![supported-versions](https://img.shields.io/pypi/pyversions/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
-[![supported-implementations](https://img.shields.io/pypi/implementation/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
-[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/sammen.svg?style=flat)](https://git.sr.ht/~sthagen/sammen/log)
+[![Version](https://img.shields.io/pypi/v/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
+[![Downloads](https://static.pepy.tech/badge/sammen/month)](https://pepy.tech/project/sammen)
+[![Supported Versions](https://img.shields.io/pypi/pyversions/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
+[![Maintenance Status](https://img.shields.io/github/commit-activity/y/sthagen/sammen.svg?style=flat)](https://git.sr.ht/~sthagen/sammen/log)
 
 ## Bug Tracker
 
