@@ -10,7 +10,7 @@ Together (Dansk: sammen) - watch multiple artifacts to ensure special events com
 [![Version](https://img.shields.io/pypi/v/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
 [![Downloads](https://static.pepy.tech/badge/sammen/month)](https://pepy.tech/project/sammen)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/sammen.svg?style=flat)](https://pypi.python.org/pypi/sammen/)
-[![Maintenance Status](docs/badges/downloads-per-month.svg)](https://git.sr.ht/~sthagen/sammen/log)
+[![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/sammen/log)
 
 ## Bug Tracker
 
