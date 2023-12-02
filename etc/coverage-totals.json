@@ -1,7 +1,7 @@
 {
   "sammen": {
-    "version": "7.3.2",
-    "timestamp": "2023-12-02T15:32:54.523568",
+    "coverage_tool_version": "7.3.2",
+    "timestamp": "2023-12-02 16:29:38 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 87,
@@ -13,6 +13,22 @@
     "num_branches": 60,
     "num_partial_branches": 4,
     "covered_branches": 16,
-    "missing_branches": 44
+    "missing_branches": 44,
+    "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
+    "nfiles": 3,
+    "files": [
+      "sammen/__init__.py",
+      "sammen/cli.py",
+      "sammen/sammen.py"
+    ],
+    "blake3": "1fb135023b479ea3db0b1fd04a009ebe027dd3c64d623344de9ea1f921b88c77",
+    "blake2": "fdd17de099624930139ef6004a27969ccc15944aca78ad940b14efa9144e4ca614e209ec4c4ea54df8ef913789089b67b5b56294bfe6648db4b05c08b2185692",
+    "sha512": "e28b362088bb12a3c488db9d5ac558c0a42555208e0b9de88fcf7b79a2838635a417e424577a65726b61d44c7ec0bed9e8f00d50815d94fe3cb810e020f2b99f",
+    "sha384": "4f0ad1b1fb7de52c47a0c7e48ef50200964053805ec79440e4be516c6e7a8249626e261f3f922d8ba1cff983bdba6d2a",
+    "sha256": "a064cda6a925ccd65afd125411e10830972f39e922762da29d07f60cdad0238a",
+    "sha1": "f253e68379426cd19cd69572cf0a018db9bc544d",
+    "md5": "7815b50a301750aacb09638e5faeab58",
+    "python_version": "3.10.12",
+    "entropy": 4.908924
   }
 }
