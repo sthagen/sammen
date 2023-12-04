@@ -1,7 +1,7 @@
 {
   "sammen": {
     "coverage_tool_version": "7.3.2",
-    "timestamp": "2023-12-03 11:54:58 +00:00",
+    "timestamp": "2023-12-04 22:50:06 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 87,
