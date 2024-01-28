@@ -7,6 +7,7 @@ name = "sammen"
 version = "2023.10.21"
 description = "Dansk for together - multiple watch to ensure special events come together or go away."
 readme = "README.md"
+license = {file = "LICENSE"}
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 maintainers = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 classifiers = [
