@@ -1,4 +1,5 @@
 """Together (Dansk: sammen) - watch multiple artifacts to ensure special events come together or go away."""
+
 import datetime as dti
 import logging
 import os

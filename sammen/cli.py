@@ -1,4 +1,5 @@
 """CLI interface for overlap (Finnish: limitys) assesses sentences from constrained and overlapping vocabularies."""
+
 import argparse
 import asyncio
 import sys
