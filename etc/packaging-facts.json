@@ -20,6 +20,7 @@
       "last_month": -1,
       "last_week": -1
     },
+    "dynamic": null,
     "home_page": "",
     "keywords": "developer-tools,devops",
     "license": "",
@@ -36,6 +37,7 @@
       "Source-Code": "https://git.sr.ht/~sthagen/sammen",
       "Test-Coverage": "https://codes.dilettant.life/coverage/sammen"
     },
+    "provides_extra": null,
     "release_url": "https://pypi.org/project/sammen/2023.10.21/",
     "requires_dist": [
       "watchfiles >=0.21.0",
